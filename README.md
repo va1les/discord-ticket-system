@@ -26,7 +26,7 @@ Easy To Use!
 ### 📥 Install all modules — `npm install`
 
 ### ✅ Launch the Bot — `node .`
-
+---
 ```js
 contacts: {
 telegram: "@va1les_tg",
