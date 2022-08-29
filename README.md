@@ -3,16 +3,12 @@ Easy To Use!
 
 **Links:**
 
-💻 Node.js: https://nodejs.org/en/
-
-⌨️ Visual Studio Code: https://code.visualstudio.com/
-
-🧑‍💻 Discord Developer Portal: https://discord.com/developers/applications
-
-📑 Discord.js Docs: https://discord.js.org/#/docs/discord.js/14.0.3/general/welcome
-
+💻 Node.js: https://nodejs.org/en/<br>
+⌨️ Visual Studio Code: https://code.visualstudio.com/<br>
+🧑‍💻 Discord Developer Portal: https://discord.com/developers/applications<br>
+📑 Discord.js Docs: https://discord.js.org/#/docs/discord.js/14.0.3/general/welcome<br>
 📚 Discord.js Guide: https://discordjs.guide/additional-info/changes-in-v14.html
-
+---
 # install
 ### 📨 **File** `config.json`
 ```js
