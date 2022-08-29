@@ -12,6 +12,7 @@ Easy To Use!
 📑 Discord.js Docs: https://discord.js.org/#/docs/discord.js/14.0.3/general/welcome
 
 📚 Discord.js Guide: https://discordjs.guide/additional-info/changes-in-v14.html
+
 ---
 # install
 ### 📨 **File** `config.json`
