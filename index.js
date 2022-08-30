@@ -30,7 +30,7 @@ client.on('messageCreate', async (message) => {
         await Guild.updateOne({ guildID: message.guild.id }, { $set: { roleID: role.id } })
         channel.send({
             "embeds": [{
-                "title": "Достучаться до Модераторов 🗣️",
+                "title": "Достучаться до Персонала 🗣️",
                 "description": "Чтобы создать тикет, взаимодействуйте с помощью \"📨\"",
                 "color": 5135764,
                 "thumbnail": { "url": "https://cdn-icons-png.flaticon.com/512/320/320416.png" }
@@ -85,7 +85,7 @@ client.on('interactionCreate', async (interaction) => {
                 await interaction.guild.channels.create({ name: `ID: ${interaction.user.id}`, type: 0, permissionOverwrites: [{ id: interaction.guild.roles.everyone, deny: PermissionFlagsBits.ViewChannel }, { id: interaction.user.id, allow: [PermissionFlagsBits.ViewChannel] }, { id: client.user.id, allow: [PermissionFlagsBits.ViewChannel, PermissionFlagsBits.SendMessages, PermissionFlagsBits.ManageChannels] }], }).then(async x => {
                     let newdata = await Guild.findOne({ guildID: interaction.guild.id });
                     x.send({
-                        "content": `${newdata.roleID ? `<@&${newdata.roleID}>` : `Модеры`} — **${interaction.user.username}** зовёт!`,
+                        "content": `${newdata?.roleID ? `<@&${newdata?.roleID}>` : `Модеры`} — **${interaction.user.username}** зовёт!`,
                         "embeds": [{
                             "title": "Тикет открыт 🔓",
                             "description": `Дата — <t:${Math.round(interaction.createdTimestamp / 1000)}:F>\nОт кого: ${interaction.user}`,
